@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Cerere privind destinația sumei reprezentând până la 2% din impozitul anual
+    </title>
+</head>
+<body>
+
+<p style="text-align: center"><strong>Monitorul oficial al României</strong></p><br><br>
+
+<div style="text-align: center">
+    <a href="https://www.anaf.ro" target="_blank">
+        <img src="anaf2.jpg" alt="Siglă anaf" height="80" width="250">
+    </a>
+    <h1>
+        <strong>Cerere privind destinația sumei reprezentând până la 2% din impozitul anual<br>
+            și deducerea cheltuielilor efectuate pentru economisirea<br> în sistem colectiv pentru domeniul locativ</strong></h1>
+</div>
+<br>
+<div style="text-align: center">
+    <label for="an">Anul</label>
+    <input type="text" id="an" name="an" value="2020" readonly><br><br>
+</div>
+
+<div align="center">
+<form action = ".idea/submit.html" style="align-self: center">
+
+    <table id="form-cerere" style="border: 1px solid">
+          <tr>
+            <td>
+                <ul>
+                <li>
+                <fieldset>
+                    <legend>
+                         Date de identificare a contribuabilului
+                    </legend>
+                    <table id="datePersonale">
+                        <thead>
+                        <tr>
+                            <th colspan="8">
+                                <b>DATE PERSONALE</b>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <td>Nume</td>
+                            <td><input type="text" id="nume" name="nume"></td>
+                            <td>Prenume</td>
+                            <td><input type="text" id="prenume" name="prenume"></td>
+                            <td>CNP</td>
+                            <td><input type="text" id="cnp" name="cnp" minlength="13" maxlength="13"></td>
+                            <td>Nr. Telefon</td>
+                            <td><input type="text" id="nrtel" name="nrtel"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" rowspan="3">Adresa</td>
+                            <td>Județ</td>
+                            <td><input type="text" id="judet" name="judet"></td>
+                            <td>Localitate</td>
+                            <td><input type="text" id="loc" name="loc"></td>
+                            <td>Strada</td>
+                            <td><input type="text" id="strada" name="strada"></td>
+                        </tr>
+                        <tr>
+                            <td>Nr</td>
+                            <td><input type="number" id="nr" name="nr"></td>
+                            <td>Bloc</td>
+                            <td><input type="text" id="bloc" name="bloc"></td>
+                            <td>Scara</td>
+                            <td><input type="number" id="scara" name="scara"></td>
+                        </tr>
+                        <tr>
+                            <td>Ap</td>
+                            <td><input type="number" id="ap" name="ap"></td>
+                            <td>Cod poștal</td>
+                            <td><input type="number" id="codP" name="codP" max="10000000"></td>
+                            <td>Sex</td>
+                            <td><input type="radio" id="sexF" name="sex" value="female" checked>F
+                            <input type="radio" id="sexM" name="sex" value="male">M</td>
+                        </tr>
+                    </table>
+                </fieldset>
+                </li>
+                    <li>
+                <fieldset>
+                    <legend>
+                         Destinația sumei reprezentând până la 2% din impozitul anual
+                    </legend>
+                    <table>
+                        <tr><td>
+                        <ol start="1">
+                            <li><input type="radio" name="var">Bursa privată<br><br>
+                                 <ul>
+                                     <li>
+                                         <label for="contract">Contract nr./data</label>
+                                         <input type="text" id="contract" name="contract"><br><br></li>
+                                     <li><label for="suma">Suma plătită - lei</label>
+                                          <input type="number" id="suma" name="suma" step="10"><br><br></li>
+                                     <li><label for="w3mission">Documente de plată nr./data</label><br><br>
+                                         <textarea id="w3mission" rows="4" cols="50"></textarea>
+                                     </li>
+                                 </ul></li>
+                            <li><input type="radio" name="var">Susținerea unei entități nonprofit/unitați de cult<br><br>
+                                 <ul>
+                                     <li><label for="suma2">Suma - lei</label>
+                                         <input type="number" id="suma2" name="suma2" step="10"><br><br></li>
+
+                                     <li><label for="denumire">Denumire entitate nonprofit/unitate de cult</label>
+                                         <input type="text" id="denumire" name="denumire"><br><br></li>
+                                     <li>
+                                         <label for="cod">Codul de identificare fiscală</label>
+                                         <input type="text" id="cod" name="cod"><br><br>
+                                     </li>
+                                      <li>
+                                          <label for="iban">Cont bancar (IBAN)</label>
+                                          <input type="text" id="iban" name="cod"><br>
+                                      </li>
+                                 </ul>
+                        </ol>
+                        </td>
+                        </tr></table>
+                </fieldset>
+                    </li>
+                    <li>
+                        <fieldset>
+
+                            <legend>
+                                <input type="checkbox">
+                                Deducerea cheltuielilor
+                            </legend>
+                            <table>
+                                <tbody>
+                                <tr><td>
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td>Denumirea instituției de credit</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <select id="banca" size="2">
+                                                    <option value="-1" disabled selected>Alegeți</option>
+                                                    <option value="1" title="Banca Comerciala Romana">
+                                                        BCR
+                                                    </option>
+                                                    <option value="2" title="Banca Transilvania">BT</option>
+                                                    <option value="3" title="Banca Romana prntru Dezvoltare">BRD</option>
+                                                    <option value="4" title="Casa de Economii și Consemnațiuni">CEC</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Suma plătită - lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="number" id="suma3" name="suma3" step="10"></td>
+                                        </tr>
+
+                                        </tbody>
+
+                                    </table>
+                                </td>
+                                    <td>
+                                        <table>
+                                            <tbody>
+                                            <tr>
+                                                <td>Documente anexate</td>
+                                            </tr>
+                                            <tr>
+                                                <td><textarea id="docs" rows="5" cols="30">
+
+                                </textarea>
+                                                </td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </td></tr>
+                            </table>
+                        </fieldset>
+                    </li>
+                </ul>
+            </td>
+
+        </tr>
+
+    </table>
+    <div>
+        <label for="files">Încărcați documentele anexate:<br>
+        (țineți apăsat CTRL pentru a selecta mai multe fișiere)</label>
+        <input type="file" id="files" name="files" multiple><br><br>
+        <input type="checkbox" required><span><i>Sub sancțiunile aplicate faptei de fals în acte publice, declar că datele înscrise în acest formular sunt corecte și complete</i></span>
+        <br><br>
+        <input type="submit">
+
+    </div>
+
+</form>
+</div>
+</body>
+</html>
